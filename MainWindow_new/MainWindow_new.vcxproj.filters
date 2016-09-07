@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{abdfded7-5c06-4bb0-88ce-b5ad2b87ade2}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{98e3751b-f6e5-49be-9e95-95e5e8583f85}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\signals">
+      <UniqueIdentifier>{b6ea5ba0-d21e-4c86-a22b-9fb96f7dbec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\intGreenMatrix">
+      <UniqueIdentifier>{24b3ed90-ef55-421f-a567-b4c53fa65dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sgProgs">
+      <UniqueIdentifier>{0e82f371-725d-4eb2-96ed-6641b230f37f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sgProgs">
+      <UniqueIdentifier>{3c75efb1-ce9b-426b-bb10-0baefb86f614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\signals">
+      <UniqueIdentifier>{e210b898-7a73-4b61-9d6f-42febe64f39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\intGreenMatrix">
+      <UniqueIdentifier>{3d0fdd95-03a2-40f2-90ea-a1930264a538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sgProgs\PaintWidget">
+      <UniqueIdentifier>{45d6e9a8-1535-4ae3-b748-d700f8e5e3de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sgProgs\PaintWidget">
+      <UniqueIdentifier>{53446131-a166-4ffa-9e23-683f5bec5313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\squence">
+      <UniqueIdentifier>{0a50d9e8-759a-462e-9e74-00a2320a9730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sequence">
+      <UniqueIdentifier>{f7017fea-ad64-432e-b511-7b77db8daa3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Translation">
+      <UniqueIdentifier>{dfa09a6a-a366-4fd4-a383-13caa780f285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Period">
+      <UniqueIdentifier>{2fe1c5f4-2f7d-4e7b-b3d3-d503fad7608d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Period">
+      <UniqueIdentifier>{c4a5b407-4229-413b-907e-bca48250937c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Translation">
+      <UniqueIdentifier>{1bad17c6-13a2-461a-89dd-5fd110ef2076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detector">
+      <UniqueIdentifier>{a70b8267-2677-48e6-b093-7e38c474c3ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detector\DetectorBus">
+      <UniqueIdentifier>{dab6e99c-a299-4ae0-9102-71f3acbca637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detector\DetectorPed">
+      <UniqueIdentifier>{0d920143-6609-4225-b8b4-d9cfcf5c7204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detector\DetectorVehicle">
+      <UniqueIdentifier>{2a2abb06-1a51-4d2b-8351-e6487d6ee1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detector">
+      <UniqueIdentifier>{fdeec06f-cbe9-40b9-a2c7-6e35e585a3d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detector\DetectorBus">
+      <UniqueIdentifier>{a54ee5eb-e4b5-4452-8e95-b1ac46997f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detector\DetectorPed">
+      <UniqueIdentifier>{a955d6fa-ec12-40b8-85b4-f6c67889fea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detector\DetectorVehicle">
+      <UniqueIdentifier>{a178ace1-9ece-4731-870e-7dc021381bf7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="treewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_treewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_treewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sgtreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sgtreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sgstablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sgstablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_intgreentreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_intgreentreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_intgrmtrxtablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_intgrmtrxtablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SignalProgTableWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SignalProgTableWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sgprogtreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sgprogtreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sgprogtreewidgetitem.cpp">
+      <Filter>Source Files\sgProgs</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalProgTableWidget.cpp">
+      <Filter>Source Files\sgProgs</Filter>
+    </ClCompile>
+    <ClCompile Include="sgtreewidgetitem.cpp">
+      <Filter>Source Files\signals</Filter>
+    </ClCompile>
+    <ClCompile Include="sgstablewidget.cpp">
+      <Filter>Source Files\signals</Filter>
+    </ClCompile>
+    <ClCompile Include="intgreentreewidgetitem.cpp">
+      <Filter>Source Files\intGreenMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="intgrmtrxtablewidget.cpp">
+      <Filter>Source Files\intGreenMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_signalwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_signalwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="signalwidget.cpp">
+      <Filter>Source Files\signals</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_greenintmatrixwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_greenintmatrixwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="greenintmatrixwidget.cpp">
+      <Filter>Source Files\intGreenMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="scwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sgprogwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sgprogwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sgprogwidget.cpp">
+      <Filter>Source Files\sgProgs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mycombox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mycombox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="mycombox.cpp">
+      <Filter>Source Files\sgProgs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_testsignallights.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_testsignallights.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\AmberRect.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\FlashAmber.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\FlashGreenOrRedRect.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\GreenRect.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\Line.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\Rect.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\RedAmberRect.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\Shap.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalPaintWidget\testsignallights.cpp">
+      <Filter>Source Files\sgProgs\PaintWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="qdlgnetconfigfront.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qdlgnetconfigfront.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qdlgnetconfigfront.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_combox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_combox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="combox.cpp">
+      <Filter>Source Files\sgProgs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sequencewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sequencewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sequencewidget.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_squencetablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_squencetablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="squencetablewidget.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_squencetreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_squencetreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="squencetreewidgetitem.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectorvehicletreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectorvehicletreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="detectorvehicletreewidgetitem.cpp">
+      <Filter>Source Files\detector\DetectorVehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectorbustreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectorbustreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="detectorbustreewidgetitem.cpp">
+      <Filter>Source Files\detector\DetectorBus</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectorpedtreewdigetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectorpedtreewdigetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="detectorpedtreewdigetitem.cpp">
+      <Filter>Source Files\detector\DetectorPed</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_transtreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_transtreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="transtreewidgetitem.cpp">
+      <Filter>Source Files\Translation</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_periodtreewidgetitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_periodtreewidgetitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="periodtreewidgetitem.cpp">
+      <Filter>Source Files\Period</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectortablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectortablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_periodtablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_periodtablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="periodtablewidget.cpp">
+      <Filter>Source Files\Period</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_transtablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_transtablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="transtablewidget.cpp">
+      <Filter>Source Files\Translation</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectorwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectorwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="detectorwidget.cpp">
+      <Filter>Source Files\detector</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_periodwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_periodwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="periodwidget.cpp">
+      <Filter>Source Files\Period</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_transwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_transwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="transwidget.cpp">
+      <Filter>Source Files\Translation</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_setsquence.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_setsquence.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="setsquence.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_phasecheckbox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_phasecheckbox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="phasecheckbox.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ProjectListWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProjectListWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectListWidget.cpp">
+      <Filter>Source Files\sequence</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="treewidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sgstablewidget.h">
+      <Filter>Header Files\signals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sgtreewidgetitem.h">
+      <Filter>Header Files\signals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="intgreentreewidgetitem.h">
+      <Filter>Header Files\intGreenMatrix</Filter>
+    </CustomBuild>
+    <CustomBuild Include="intgrmtrxtablewidget.h">
+      <Filter>Header Files\intGreenMatrix</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sgprogtreewidgetitem.h">
+      <Filter>Header Files\sgProgs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalProgTableWidget.h">
+      <Filter>Header Files\sgProgs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="signalwidget.h">
+      <Filter>Header Files\signals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GreenIntMatrixWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="greenintmatrixwidget.h">
+      <Filter>Header Files\intGreenMatrix</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sgprogwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sgprogwidget.h">
+      <Filter>Header Files\sgProgs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mycombox.h">
+      <Filter>Header Files\sgProgs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\testsignallights.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qdlgnetconfigfront.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qdlgnetconfigfront.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="combox.h">
+      <Filter>Header Files\sgProgs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="common.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\AmberRect.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\FlashAmber.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\FlashGreenOrRedRect.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\GreenRect.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\Line.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\Rect.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\RedAmberRect.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalPaintWidget\Shap.h">
+      <Filter>Header Files\sgProgs\PaintWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_GreenIntMatrixWidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_qdlgnetconfigfront.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_scwidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_sgprogwidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sequencewidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sequencewidget.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+    <CustomBuild Include="squencetablewidget.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+    <CustomBuild Include="squencetreewidgetitem.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectorvehicletreewidgetitem.h">
+      <Filter>Header Files\detector\DetectorVehicle</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectorbustreewidgetitem.h">
+      <Filter>Header Files\detector\DetectorBus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectorpedtreewdigetitem.h">
+      <Filter>Header Files\detector\DetectorPed</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transtreewidgetitem.h">
+      <Filter>Header Files\Translation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="periodtreewidgetitem.h">
+      <Filter>Header Files\Period</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectortablewidget.h">
+      <Filter>Header Files\detector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="periodtablewidget.h">
+      <Filter>Header Files\Period</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transtablewidget.h">
+      <Filter>Header Files\Translation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SignalWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectorwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectorwidget.h">
+      <Filter>Header Files\detector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="periodwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="periodwidget.h">
+      <Filter>Header Files\Period</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transwidget.h">
+      <Filter>Header Files\Translation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setsquence.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+    <CustomBuild Include="phasecheckbox.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ProjectListWidget.h">
+      <Filter>Header Files\squence</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_sequencewidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_SignalWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_detectorwidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_periodwidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_transwidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

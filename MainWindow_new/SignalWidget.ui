@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignalWidget</class>
+ <widget class="QWidget" name="SignalWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>835</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SignalWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>名称</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nameLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>默认的序列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="typeComboBox">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>16</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>全红</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/lights/red</normaloff>:/lights/red</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>全绿</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/lights/green</normaloff>:/lights/green</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-红黄-绿-黄</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_redamber_green_amber</normaloff>:/type/red_redamber_green_amber</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-绿</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_green</normaloff>:/type/red_green</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-红黄-绿-绿闪-黄</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_redamber_green_flashgreen_amber</normaloff>:/type/red_redamber_green_flashgreen_amber</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-绿-绿闪</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_green_flashgreen</normaloff>:/type/red_green_flashgreen</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-绿-黄</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_green_amber</normaloff>:/type/red_green_amber</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>黄闪</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/lights/flash_amber</normaloff>:/lights/flash_amber</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>关灯</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/lights/off</normaloff>:/lights/off</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红灯-关灯</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_off</normaloff>:/type/red_off</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红灯-关灯-黄</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_off_amber</normaloff>:/type/red_off_amber</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>关灯-绿</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/off_green</normaloff>:/type/off_green</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>黄闪-关灯</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/flashamber_off</normaloff>:/type/flashamber_off</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红-绿-红闪</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/red_green_flashred</normaloff>:/type/red_green_flashred</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红闪-关灯</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mainwindow.qrc">
+          <normaloff>:/type/flashred_off</normaloff>:/type/flashred_off</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>默认的最小时长</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QTableWidget" name="typeTableWidget">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>红</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/red</normaloff>:/lights/red</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>红黄</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/red_amber</normaloff>:/lights/red_amber</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>绿</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/green</normaloff>:/lights/green</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>黄</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/amber</normaloff>:/lights/amber</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>绿闪</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/flashing_green</normaloff>:/lights/flashing_green</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>黄闪</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/flash_amber</normaloff>:/lights/flash_amber</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/off</normaloff>:/lights/off</iconset>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>红闪</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainwindow.qrc">
+        <normaloff>:/lights/flashing_red</normaloff>:/lights/flashing_red</iconset>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>备注</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="bakTextEdit"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>typeChanged(int)</slot>
+ </slots>
+</ui>

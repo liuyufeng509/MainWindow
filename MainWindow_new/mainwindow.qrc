@@ -1,0 +1,56 @@
+<RCC>
+    <qresource lang="window" prefix="/ToolBar">
+        <file alias="exit">Resources/image/exit.png</file>
+        <file alias="add">Resources/image/add.png</file>
+        <file alias="copy">Resources/image/copy.png</file>
+        <file alias="delete">Resources/image/delete.png</file>
+        <file alias="edit">Resources/image/edit.png</file>
+        <file alias="fileopen">Resources/image/fileopen.png</file>
+        <file alias="filesave">Resources/image/filesave.png</file>
+        <file alias="signal">Resources/image/signal.png</file>
+        <file alias="down">Resources/image/down.png</file>
+        <file alias="upload">Resources/image/upload.png</file>
+        <file alias="bkground">Resources/image/background.jpg</file>
+        <file alias="window">Resources/image/window.png</file>
+        <file alias="loaddefault">Resources/image/loaddefault.png</file>
+        <file alias="savedefault">Resources/image/savedefault.png</file>
+        <file alias="localSave">Resources/image/localSave.png</file>
+    </qresource>
+    <qresource prefix="/Tree">
+        <file alias="signalLight">Resources/image/signalLight.png</file>
+        <file alias="signalTimePlan">Resources/image/signalTimePlan.png</file>
+        <file alias="signalTimePlans">Resources/image/signalTimePlans.png</file>
+        <file alias="greenIntervalMatrix">Resources/image/greenIntervalMatrix.png</file>
+        <file alias="greenIntervalMatrixs">Resources/image/greenIntervalMatrixs.png</file>
+        <file alias="signalGroup">Resources/image/signalGroup.png</file>
+        <file alias="signalCtrl">Resources/image/signalCtrl.png</file>
+        <file alias="squence">Resources/image/squence.png</file>
+        <file alias="detector">Resources/image/detector.png</file>
+        <file alias="period">Resources/image/period.png</file>
+        <file alias="translation">Resources/image/translation.png</file>
+    </qresource>
+    <qresource prefix="/lights">
+        <file alias="amber">Resources/image/lights/amber.png</file>
+        <file alias="flash_amber">Resources/image/lights/flashing_amber.png</file>
+        <file alias="flashing_green">Resources/image/lights/flashing_green.png</file>
+        <file alias="flashing_red">Resources/image/lights/flashing_red.png</file>
+        <file alias="green">Resources/image/lights/green.png</file>
+        <file alias="off">Resources/image/lights/off.png</file>
+        <file alias="red">Resources/image/lights/red.png</file>
+        <file alias="red_amber">Resources/image/lights/red_amber.png</file>
+    </qresource>
+    <qresource prefix="/type">
+        <file alias="flashamber_off">Resources/image/type/flashamber_off.png</file>
+        <file alias="flashred_off">Resources/image/type/flashred_off.png</file>
+        <file alias="off_green">Resources/image/type/off_green.png</file>
+        <file alias="red_green">Resources/image/type/red_green.png</file>
+        <file alias="red_green_amber">Resources/image/type/red_green_amber.png</file>
+        <file alias="red_green_flashgreen">Resources/image/type/red_green_flashgreen.png</file>
+        <file alias="red_green_flashred">Resources/image/type/red_green_flashred.png</file>
+        <file alias="red_off">Resources/image/type/red_off.png</file>
+        <file alias="red_off_amber">Resources/image/type/red_off_amber.png</file>
+        <file alias="red_redamber_green_amber">Resources/image/type/red_redamber_green_amber.png</file>
+        <file alias="red_redamber_green_flashgreen_amber">Resources/image/type/red_redamber_green_flashgreen_amber.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>

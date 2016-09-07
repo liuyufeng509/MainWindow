@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>979</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mainwindow.qrc">
+    <normaloff>:/ToolBar/window</normaloff>:/ToolBar/window</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>979</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="localFileSaveAction"/>
+    <addaction name="localFileSaveAsAction"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="saveDefAction"/>
+    <addaction name="loadDefAction"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>信号机</string>
+    </property>
+    <addaction name="netFrontAction"/>
+    <addaction name="upLoadAction"/>
+    <addaction name="downLoadAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="aboutAction"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="localFileSaveAction"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdd"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionEdit"/>
+   <addaction name="actionDelete"/>
+   <addaction name="netFrontAction"/>
+   <addaction name="upLoadAction"/>
+   <addaction name="downLoadAction"/>
+   <addaction name="saveDefAction"/>
+   <addaction name="loadDefAction"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/fileopen</normaloff>:/ToolBar/fileopen</iconset>
+   </property>
+   <property name="text">
+    <string>打开...</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/filesave</normaloff>:/ToolBar/filesave</iconset>
+   </property>
+   <property name="text">
+    <string>保存VISSIM</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/filesave</normaloff>:/ToolBar/filesave</iconset>
+   </property>
+   <property name="text">
+    <string>另存为VISSIM...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/exit</normaloff>:/ToolBar/exit</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/add</normaloff>:/ToolBar/add</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="toolTip">
+    <string>添加</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/copy</normaloff>:/ToolBar/copy</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="toolTip">
+    <string>复制并添加一行</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/edit</normaloff>:/ToolBar/edit</iconset>
+   </property>
+   <property name="text">
+    <string>编辑</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑选项</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/delete</normaloff>:/ToolBar/delete</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除一行</string>
+   </property>
+  </action>
+  <action name="upLoadAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/upload</normaloff>:/ToolBar/upload</iconset>
+   </property>
+   <property name="text">
+    <string>上载信号机数据</string>
+   </property>
+  </action>
+  <action name="downLoadAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/down</normaloff>:/ToolBar/down</iconset>
+   </property>
+   <property name="text">
+    <string>下载信号机数据</string>
+   </property>
+  </action>
+  <action name="netFrontAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/signal</normaloff>:/ToolBar/signal</iconset>
+   </property>
+   <property name="text">
+    <string>现场配置设备</string>
+   </property>
+  </action>
+  <action name="aboutAction">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="saveDefAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/savedefault</normaloff>:/ToolBar/savedefault</iconset>
+   </property>
+   <property name="text">
+    <string>设为默认方案</string>
+   </property>
+  </action>
+  <action name="loadDefAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/loaddefault</normaloff>:/ToolBar/loaddefault</iconset>
+   </property>
+   <property name="text">
+    <string>加载默认方案</string>
+   </property>
+  </action>
+  <action name="localFileSaveAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/localSave</normaloff>:/ToolBar/localSave</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="localFileSaveAsAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/localSave</normaloff>:/ToolBar/localSave</iconset>
+   </property>
+   <property name="text">
+    <string>另存为....</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>addOption()</slot>
+ </slots>
+</ui>
