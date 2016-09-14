@@ -42,11 +42,17 @@ public:
     QAction *loadDefAction;
     QAction *localFileSaveAction;
     QAction *localFileSaveAsAction;
+    QAction *autoAction;
+    QAction *allReadAction;
+    QAction *flashAction;
+    QAction *offAction;
+    QAction *stepAction;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdit;
     QMenu *menu;
+    QMenu *menu_2;
     QStatusBar *statusBar;
     QToolBar *mainToolBar;
 
@@ -132,6 +138,16 @@ public:
         localFileSaveAsAction = new QAction(MainWindowClass);
         localFileSaveAsAction->setObjectName(QStringLiteral("localFileSaveAsAction"));
         localFileSaveAsAction->setIcon(icon13);
+        autoAction = new QAction(MainWindowClass);
+        autoAction->setObjectName(QStringLiteral("autoAction"));
+        allReadAction = new QAction(MainWindowClass);
+        allReadAction->setObjectName(QStringLiteral("allReadAction"));
+        flashAction = new QAction(MainWindowClass);
+        flashAction->setObjectName(QStringLiteral("flashAction"));
+        offAction = new QAction(MainWindowClass);
+        offAction->setObjectName(QStringLiteral("offAction"));
+        stepAction = new QAction(MainWindowClass);
+        stepAction->setObjectName(QStringLiteral("stepAction"));
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MainWindowClass->setCentralWidget(centralWidget);
@@ -144,6 +160,8 @@ public:
         menuEdit->setObjectName(QStringLiteral("menuEdit"));
         menu = new QMenu(menuBar);
         menu->setObjectName(QStringLiteral("menu"));
+        menu_2 = new QMenu(menuBar);
+        menu_2->setObjectName(QStringLiteral("menu_2"));
         MainWindowClass->setMenuBar(menuBar);
         statusBar = new QStatusBar(MainWindowClass);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -154,6 +172,7 @@ public:
 
         menuBar->addAction(menuFile->menuAction());
         menuBar->addAction(menuEdit->menuAction());
+        menuBar->addAction(menu_2->menuAction());
         menuBar->addAction(menu->menuAction());
         menuFile->addAction(actionOpen);
         menuFile->addSeparator();
@@ -170,6 +189,11 @@ public:
         menuEdit->addAction(upLoadAction);
         menuEdit->addAction(downLoadAction);
         menu->addAction(aboutAction);
+        menu_2->addAction(autoAction);
+        menu_2->addAction(allReadAction);
+        menu_2->addAction(flashAction);
+        menu_2->addAction(offAction);
+        menu_2->addAction(stepAction);
         mainToolBar->addAction(actionOpen);
         mainToolBar->addAction(localFileSaveAction);
         mainToolBar->addSeparator();
@@ -220,9 +244,15 @@ public:
         localFileSaveAction->setText(QApplication::translate("MainWindowClass", "\344\277\235\345\255\230", 0));
         localFileSaveAction->setShortcut(QApplication::translate("MainWindowClass", "Ctrl+S", 0));
         localFileSaveAsAction->setText(QApplication::translate("MainWindowClass", "\345\217\246\345\255\230\344\270\272....", 0));
+        autoAction->setText(QApplication::translate("MainWindowClass", "\350\207\252\345\212\250", 0));
+        allReadAction->setText(QApplication::translate("MainWindowClass", "\345\205\250\347\272\242", 0));
+        flashAction->setText(QApplication::translate("MainWindowClass", "\351\227\252\345\205\211", 0));
+        offAction->setText(QApplication::translate("MainWindowClass", "\345\205\263\347\201\257", 0));
+        stepAction->setText(QApplication::translate("MainWindowClass", "\346\255\245\350\277\233", 0));
         menuFile->setTitle(QApplication::translate("MainWindowClass", "\346\226\207\344\273\266", 0));
         menuEdit->setTitle(QApplication::translate("MainWindowClass", "\344\277\241\345\217\267\346\234\272", 0));
         menu->setTitle(QApplication::translate("MainWindowClass", "\345\270\256\345\212\251", 0));
+        menu_2->setTitle(QApplication::translate("MainWindowClass", "\344\277\241\345\217\267\346\234\272\346\216\247\345\210\266", 0));
     } // retranslateUi
 
 };

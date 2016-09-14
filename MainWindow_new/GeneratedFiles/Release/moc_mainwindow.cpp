@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[44];
-    char stringdata[699];
+    QByteArrayData data[49];
+    char stringdata[776];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -65,14 +65,19 @@ QT_MOC_LITERAL(32, 549, 14), // "saveVISSIMFile"
 QT_MOC_LITERAL(33, 564, 16), // "saveAsVISSIMFile"
 QT_MOC_LITERAL(34, 581, 14), // "netFrontConfig"
 QT_MOC_LITERAL(35, 596, 8), // "aboutDlg"
-QT_MOC_LITERAL(36, 605, 12), // "downLoadData"
-QT_MOC_LITERAL(37, 618, 10), // "upLoadData"
-QT_MOC_LITERAL(38, 629, 10), // "saveDefFun"
-QT_MOC_LITERAL(39, 640, 10), // "loadDefFun"
-QT_MOC_LITERAL(40, 651, 14), // "freshStatusBar"
-QT_MOC_LITERAL(41, 666, 9), // "connected"
-QT_MOC_LITERAL(42, 676, 12), // "disconnected"
-QT_MOC_LITERAL(43, 689, 9) // "readyRead"
+QT_MOC_LITERAL(36, 605, 14), // "autoActionCtrl"
+QT_MOC_LITERAL(37, 620, 16), // "allRedActionCtrl"
+QT_MOC_LITERAL(38, 637, 15), // "flashActionCtrl"
+QT_MOC_LITERAL(39, 653, 13), // "offActionCtrl"
+QT_MOC_LITERAL(40, 667, 14), // "stepActionCtrl"
+QT_MOC_LITERAL(41, 682, 12), // "downLoadData"
+QT_MOC_LITERAL(42, 695, 10), // "upLoadData"
+QT_MOC_LITERAL(43, 706, 10), // "saveDefFun"
+QT_MOC_LITERAL(44, 717, 10), // "loadDefFun"
+QT_MOC_LITERAL(45, 728, 14), // "freshStatusBar"
+QT_MOC_LITERAL(46, 743, 9), // "connected"
+QT_MOC_LITERAL(47, 753, 12), // "disconnected"
+QT_MOC_LITERAL(48, 766, 9) // "readyRead"
 
     },
     "MainWindow\0updateSgDataToUI\0\0SgData&\0"
@@ -90,7 +95,9 @@ QT_MOC_LITERAL(43, 689, 9) // "readyRead"
     "detectPedWidgetSelected\0transWidgetSelected\0"
     "periodWidgetSelected\0showScData\0"
     "openFile\0saveVISSIMFile\0saveAsVISSIMFile\0"
-    "netFrontConfig\0aboutDlg\0downLoadData\0"
+    "netFrontConfig\0aboutDlg\0autoActionCtrl\0"
+    "allRedActionCtrl\0flashActionCtrl\0"
+    "offActionCtrl\0stepActionCtrl\0downLoadData\0"
     "upLoadData\0saveDefFun\0loadDefFun\0"
     "freshStatusBar\0connected\0disconnected\0"
     "readyRead"
@@ -103,7 +110,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      32,   14, // methods
+      37,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -111,38 +118,43 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,  174,    2, 0x0a /* Public */,
-       5,    1,  177,    2, 0x0a /* Public */,
-       7,    1,  180,    2, 0x0a /* Public */,
-       9,    1,  183,    2, 0x0a /* Public */,
-      11,    1,  186,    2, 0x0a /* Public */,
-      13,    1,  189,    2, 0x0a /* Public */,
-      15,    1,  192,    2, 0x0a /* Public */,
-      17,    1,  195,    2, 0x0a /* Public */,
-      19,    1,  198,    2, 0x0a /* Public */,
-      21,    0,  201,    2, 0x0a /* Public */,
-      22,    0,  202,    2, 0x0a /* Public */,
-      23,    0,  203,    2, 0x0a /* Public */,
-      24,    0,  204,    2, 0x0a /* Public */,
-      25,    0,  205,    2, 0x0a /* Public */,
-      26,    0,  206,    2, 0x0a /* Public */,
-      27,    0,  207,    2, 0x0a /* Public */,
-      28,    0,  208,    2, 0x0a /* Public */,
-      29,    0,  209,    2, 0x0a /* Public */,
-      30,    0,  210,    2, 0x0a /* Public */,
-      31,    0,  211,    2, 0x0a /* Public */,
-      32,    0,  212,    2, 0x0a /* Public */,
-      33,    0,  213,    2, 0x0a /* Public */,
-      34,    0,  214,    2, 0x0a /* Public */,
-      35,    0,  215,    2, 0x0a /* Public */,
-      36,    0,  216,    2, 0x0a /* Public */,
-      37,    0,  217,    2, 0x0a /* Public */,
-      38,    0,  218,    2, 0x0a /* Public */,
-      39,    0,  219,    2, 0x0a /* Public */,
-      40,    0,  220,    2, 0x0a /* Public */,
-      41,    0,  221,    2, 0x0a /* Public */,
-      42,    0,  222,    2, 0x0a /* Public */,
-      43,    0,  223,    2, 0x0a /* Public */,
+       1,    1,  199,    2, 0x0a /* Public */,
+       5,    1,  202,    2, 0x0a /* Public */,
+       7,    1,  205,    2, 0x0a /* Public */,
+       9,    1,  208,    2, 0x0a /* Public */,
+      11,    1,  211,    2, 0x0a /* Public */,
+      13,    1,  214,    2, 0x0a /* Public */,
+      15,    1,  217,    2, 0x0a /* Public */,
+      17,    1,  220,    2, 0x0a /* Public */,
+      19,    1,  223,    2, 0x0a /* Public */,
+      21,    0,  226,    2, 0x0a /* Public */,
+      22,    0,  227,    2, 0x0a /* Public */,
+      23,    0,  228,    2, 0x0a /* Public */,
+      24,    0,  229,    2, 0x0a /* Public */,
+      25,    0,  230,    2, 0x0a /* Public */,
+      26,    0,  231,    2, 0x0a /* Public */,
+      27,    0,  232,    2, 0x0a /* Public */,
+      28,    0,  233,    2, 0x0a /* Public */,
+      29,    0,  234,    2, 0x0a /* Public */,
+      30,    0,  235,    2, 0x0a /* Public */,
+      31,    0,  236,    2, 0x0a /* Public */,
+      32,    0,  237,    2, 0x0a /* Public */,
+      33,    0,  238,    2, 0x0a /* Public */,
+      34,    0,  239,    2, 0x0a /* Public */,
+      35,    0,  240,    2, 0x0a /* Public */,
+      36,    0,  241,    2, 0x0a /* Public */,
+      37,    0,  242,    2, 0x0a /* Public */,
+      38,    0,  243,    2, 0x0a /* Public */,
+      39,    0,  244,    2, 0x0a /* Public */,
+      40,    0,  245,    2, 0x0a /* Public */,
+      41,    0,  246,    2, 0x0a /* Public */,
+      42,    0,  247,    2, 0x0a /* Public */,
+      43,    0,  248,    2, 0x0a /* Public */,
+      44,    0,  249,    2, 0x0a /* Public */,
+      45,    0,  250,    2, 0x0a /* Public */,
+      46,    0,  251,    2, 0x0a /* Public */,
+      47,    0,  252,    2, 0x0a /* Public */,
+      48,    0,  253,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -154,6 +166,11 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, 0x80000000 | 16,    2,
     QMetaType::Void, 0x80000000 | 18,    2,
     QMetaType::Void, 0x80000000 | 20,    2,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -210,14 +227,19 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 21: _t->saveAsVISSIMFile(); break;
         case 22: _t->netFrontConfig(); break;
         case 23: _t->aboutDlg(); break;
-        case 24: _t->downLoadData(); break;
-        case 25: _t->upLoadData(); break;
-        case 26: _t->saveDefFun(); break;
-        case 27: _t->loadDefFun(); break;
-        case 28: _t->freshStatusBar(); break;
-        case 29: _t->connected(); break;
-        case 30: _t->disconnected(); break;
-        case 31: _t->readyRead(); break;
+        case 24: _t->autoActionCtrl(); break;
+        case 25: _t->allRedActionCtrl(); break;
+        case 26: _t->flashActionCtrl(); break;
+        case 27: _t->offActionCtrl(); break;
+        case 28: _t->stepActionCtrl(); break;
+        case 29: _t->downLoadData(); break;
+        case 30: _t->upLoadData(); break;
+        case 31: _t->saveDefFun(); break;
+        case 32: _t->loadDefFun(); break;
+        case 33: _t->freshStatusBar(); break;
+        case 34: _t->connected(); break;
+        case 35: _t->disconnected(); break;
+        case 36: _t->readyRead(); break;
         default: ;
         }
     }
@@ -248,13 +270,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 32)
+        if (_id < 37)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 32;
+        _id -= 37;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 32)
+        if (_id < 37)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 32;
+        _id -= 37;
     }
     return _id;
 }

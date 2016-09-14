@@ -60,8 +60,19 @@
     </property>
     <addaction name="aboutAction"/>
    </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>信号机控制</string>
+    </property>
+    <addaction name="autoAction"/>
+    <addaction name="allReadAction"/>
+    <addaction name="flashAction"/>
+    <addaction name="offAction"/>
+    <addaction name="stepAction"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menu_2"/>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
@@ -238,6 +249,31 @@
    </property>
    <property name="text">
     <string>另存为....</string>
+   </property>
+  </action>
+  <action name="autoAction">
+   <property name="text">
+    <string>自动</string>
+   </property>
+  </action>
+  <action name="allReadAction">
+   <property name="text">
+    <string>全红</string>
+   </property>
+  </action>
+  <action name="flashAction">
+   <property name="text">
+    <string>闪光</string>
+   </property>
+  </action>
+  <action name="offAction">
+   <property name="text">
+    <string>关灯</string>
+   </property>
+  </action>
+  <action name="stepAction">
+   <property name="text">
+    <string>步进</string>
    </property>
   </action>
  </widget>

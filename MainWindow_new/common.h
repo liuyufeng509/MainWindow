@@ -241,6 +241,12 @@ struct ScData				//信号机控制结构体
 #define CTRL_SET					(quint8)(0xF0)		//设置参数
 #define CTRL_SAVE_CONF			(quint8)(0xFE)		//保存参数
 
+#define CTRL_AUTO				(quint8)0xB1		// 自动
+#define CTRL_ALL_RED			(quint8)0xB2		//全红
+#define CTRL_FLASH				(quint8)0xB3		//闪光
+#define CTRL_OFF				(quint8)0xB4		//关灯
+#define CTRL_STEP				(quint8)0xB5		//步进
+
 //控制方式宏定义
 #define		CONTROL_TYPE_AMBERFLASH				0X01	//黄闪
 #define		CONTROL_TYPE_ALLRED					0X02	//全红

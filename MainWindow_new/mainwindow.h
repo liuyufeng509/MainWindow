@@ -46,6 +46,8 @@ public:
 	void SaveDataFromUI();
 	void SetPlanStreamData(type_fun_conf &funConfig, quint8 ctrl);
 	void SetSaveDataMsg();
+	void SetCtrlDataMsg(quint8 ctrl);
+
 public slots:
 	void updateSgDataToUI(SgData &data);
 	void updateIntGrMtrxToUI(InterGreenMatrixData &data);
@@ -75,6 +77,12 @@ public slots:
 	void saveAsVISSIMFile();
 	void netFrontConfig();
 	void aboutDlg();
+
+	void autoActionCtrl();
+	void allRedActionCtrl();
+	void flashActionCtrl();
+	void offActionCtrl();
+	void stepActionCtrl();
 
 	void downLoadData();
 	void upLoadData();

@@ -103,9 +103,11 @@ TreeWidget::TreeWidget(QVector<SgData>  &sgsDatas,ScData &scData, QVector<InterG
 	//添加相序树节点
 	squenceItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("相序配置")));
 	squenceItem->setIcon(0, QIcon(":/Tree/squence"));
+	squenceItem->setHidden(true);
 
 	translationItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("过渡方案配置")));
 	translationItem->setIcon(0, QIcon(":/Tree/translation"));
+	translationItem->setHidden(true);
 
 	signalProgsItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("配时方案")));
 	signalProgsItem->setIcon(0, QIcon(":/Tree/signalTimePlans"));
@@ -115,10 +117,13 @@ TreeWidget::TreeWidget(QVector<SgData>  &sgsDatas,ScData &scData, QVector<InterG
 
 	detectorVehItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("过车检测器配置")));
 	detectorVehItem->setIcon(0, QIcon(":/Tree/detector"));
+	detectorVehItem->setHidden(true);
 	detectorBusItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("公交检测器配置")));
 	detectorBusItem->setIcon(0, QIcon(":/Tree/detector"));
+	detectorBusItem->setHidden(true);
 	detectorPedItem = new QTreeWidgetItem(rootItem, QStringList(QString::fromLocal8Bit("行人检测器配置")));
 	detectorPedItem->setIcon(0, QIcon(":/Tree/detector"));
+	detectorPedItem->setHidden(true);
 
 
 	this->setCurrentItem(rootItem);

@@ -113,6 +113,11 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(ui.localFileSaveAsAction, SIGNAL(triggered()), this, SLOT(saveAsVISSIMFile()));
 	connect(ui.netFrontAction, SIGNAL(triggered()), this, SLOT(netFrontConfig()));
 	connect(ui.aboutAction, SIGNAL(triggered()), this, SLOT(aboutDlg()));
+	connect(ui.autoAction, SIGNAL(triggered()), this, SLOT(autoActionCtrl()));
+	connect(ui.allReadAction, SIGNAL(triggered()), this, SLOT(allRedActionCtrl()));
+	connect(ui.flashAction, SIGNAL(triggered()), this, SLOT(flashActionCtrl()));
+	connect(ui.offAction, SIGNAL(triggered()), this, SLOT(offActionCtrl()));
+	connect(ui.stepAction, SIGNAL(triggered()), this, SLOT(stepActionCtrl()));
 
 	connect(ui.downLoadAction, SIGNAL(triggered()), this, SLOT(downLoadData()));
 	connect(ui.upLoadAction, SIGNAL(triggered()), this, SLOT(upLoadData()));
@@ -195,6 +200,48 @@ MainWindow::MainWindow(QWidget *parent)
 	this->statusBar()->addWidget(verLabel);
 }
 
+void MainWindow::autoActionCtrl()
+{
+	//发送控制消息
+	SetCtrlDataMsg(CTRL_AUTO);
+	if (m_tcpSocket->write((char*)data, msg_len)>0)
+	{
+		qCritical()<<"Down autoActionCtrl Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
+	}
+}
+void MainWindow::allRedActionCtrl()
+{
+	SetCtrlDataMsg(CTRL_ALL_RED);
+	if (m_tcpSocket->write((char*)data, msg_len)>0)
+	{
+		qCritical()<<"Down allRedActionCtrl Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
+	}
+}
+void MainWindow::flashActionCtrl()
+{
+	SetCtrlDataMsg(CTRL_FLASH);
+	if (m_tcpSocket->write((char*)data, msg_len)>0)
+	{
+		qCritical()<<"Down flashActionCtrl Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
+	}
+}
+void MainWindow::offActionCtrl()
+{
+	SetCtrlDataMsg(CTRL_OFF);
+	if (m_tcpSocket->write((char*)data, msg_len)>0)
+	{
+		qCritical()<<"Down offActionCtrl Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
+	}
+}
+void MainWindow::stepActionCtrl()
+{
+	SetCtrlDataMsg(CTRL_STEP);
+	if (m_tcpSocket->write((char*)data, msg_len)>0)
+	{
+		qCritical()<<"Down stepActionCtrl Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
+	}
+}
+
 void MainWindow::connected()
 {
 	qDebug() << "connected IP:"<<ip<<" PORT:"<<TCPPORT;
@@ -269,11 +316,54 @@ void MainWindow::readyRead()
 				qCritical()<<"Down Save Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
 			}
 		}
-		if (sta == CTRL_SAVE_CONF)
+		switch (sta)
 		{
-			label->setText(QString::fromLocal8Bit("保存参数完成，下载成功"));
-			qCritical()<<QString::fromLocal8Bit("保存参数完成，下载成功\n");
-			QMessageBox::information(this, "infor", QString::fromLocal8Bit("下载成功！"));
+		case CTRL_SAVE_CONF:
+			{
+				label->setText(QString::fromLocal8Bit("保存参数完成，下载成功"));
+				qCritical()<<QString::fromLocal8Bit("保存参数完成，下载成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("下载成功！"));
+			}
+			break;
+		case CTRL_AUTO:
+			{
+				label->setText(QString::fromLocal8Bit("自动控制成功"));
+				qCritical()<<QString::fromLocal8Bit("自动控制成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("自动控制成功！"));
+			}
+			break;
+		case CTRL_ALL_RED:
+			{
+				label->setText(QString::fromLocal8Bit("全红控制成功"));
+				qCritical()<<QString::fromLocal8Bit("全红控制成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("全红控制成功！"));
+			}
+			break;
+		case CTRL_FLASH:
+			{
+				label->setText(QString::fromLocal8Bit("闪光控制成功"));
+				qCritical()<<QString::fromLocal8Bit("闪光控制成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("闪光控制成功！"));
+			}
+			break;
+
+		case CTRL_OFF:
+			{
+				label->setText(QString::fromLocal8Bit("关灯控制成功"));
+				qCritical()<<QString::fromLocal8Bit("关灯控制成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("关灯控制成功！"));
+			}
+			break;
+		case CTRL_STEP:
+			{
+				label->setText(QString::fromLocal8Bit("步进控制成功"));
+				qCritical()<<QString::fromLocal8Bit("步进控制成功\n");
+				QMessageBox::information(this, "infor", QString::fromLocal8Bit("步进控制成功！"));
+			}
+			break;
+
+		default:
+			break;
 		}
 		datagram.clear();
 	}
@@ -281,7 +371,7 @@ void MainWindow::readyRead()
 
 void MainWindow::aboutDlg()
 {
-	QMessageBox::about(NULL, QString::fromLocal8Bit("关于"), QString::fromLocal8Bit("版本号：v2.0.5"));
+	QMessageBox::about(NULL, QString::fromLocal8Bit("关于"), QString::fromLocal8Bit("版本号：v2.0.6"));
 }
 
 void MainWindow::saveDefFun()
@@ -557,6 +647,28 @@ void MainWindow::downLoadData()
 		qCritical()<<"Fail to Down Load Data Request to ip("<<ip<<":"<<TCPPORT<<"):"<<QByteArray((char*)data, msg_len).toHex().data()<<"\n";
 	}
 
+}
+
+void MainWindow::SetCtrlDataMsg(quint8 ctrl)
+{
+	type_frame_head frame_head;
+	frame_head.head='<';
+	frame_head.total_size = sizeof(frame_head.reserve)+sizeof(frame_head.addr)+sizeof(frame_head.ctrl)+sizeof(frame_head.type_fun);
+	frame_head.addr=addr;		
+	frame_head.ctrl=ctrl;	
+	frame_head.type_fun=0x55;	//type_fun该怎么填--预留
+	quint8 *p = (quint8 *)data;
+
+	memset(data, 0, sizeof(data));
+	msg_len=0;
+	memcpy(data, &frame_head, sizeof(frame_head)-1);
+	p = p + sizeof(frame_head)-1;
+	int len_sum = frame_head.total_size + sizeof(frame_head.head)+sizeof(frame_head.total_size);
+	quint16 sum = check_sum(data, len_sum);
+	memcpy(p, &sum, 2);
+	p+=2;
+	*p='>';
+	msg_len = frame_head.total_size +sizeof(frame_head.head)+sizeof(frame_head.total_size)+ 2 +1;
 }
 
 void MainWindow::SetSaveDataMsg()
