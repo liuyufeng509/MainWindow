@@ -69,6 +69,7 @@
     <addaction name="flashAction"/>
     <addaction name="offAction"/>
     <addaction name="stepAction"/>
+    <addaction name="checkTimeAction"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -91,6 +92,7 @@
    <addaction name="actionEdit"/>
    <addaction name="actionDelete"/>
    <addaction name="netFrontAction"/>
+   <addaction name="checkTimeAction"/>
    <addaction name="upLoadAction"/>
    <addaction name="downLoadAction"/>
    <addaction name="saveDefAction"/>
@@ -274,6 +276,15 @@
   <action name="stepAction">
    <property name="text">
     <string>步进</string>
+   </property>
+  </action>
+  <action name="checkTimeAction">
+   <property name="icon">
+    <iconset resource="mainwindow.qrc">
+     <normaloff>:/ToolBar/checkTime</normaloff>:/ToolBar/checkTime</iconset>
+   </property>
+   <property name="text">
+    <string>校时</string>
    </property>
   </action>
  </widget>

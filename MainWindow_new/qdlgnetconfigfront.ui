@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>30</y>
+     <y>20</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>130</y>
+     <y>150</y>
      <width>221</width>
      <height>401</height>
     </rect>
@@ -40,7 +40,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>90</y>
+     <y>110</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -197,6 +197,32 @@
      <widget class="QLineEdit" name="sim_port2LineEdit"/>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置广播地址:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>80</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

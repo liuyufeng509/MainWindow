@@ -1190,6 +1190,19 @@ int set_unit_conf(quint8 *unit,int size,type_fun_conf &fun_config, quint32 &id_f
 			memcpy(&fun_config.matrices, p, size);
 		}
 		break;
+
+	case FUN_DATE_TIME:
+		n = sizeof(fun_config.date_time);
+		if ( n!= size)
+		{
+			qCritical()<<"FUN_DATE_TIME 数据单元解析错误: size("<<size<<")!=sizeof(type_date_time:"<<n<<")\n";
+			return -1;
+		}
+		else
+		{
+			memcpy(&fun_config.date_time, p, size);
+		}
+		break;
 	}
 	
 	return 0;

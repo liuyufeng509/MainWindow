@@ -7,6 +7,7 @@
 #include <QtDebug>
 #include <QDateTime>
 #include <QFile>
+#include <time.h>
 using namespace std;
 //信号序列定义（信号灯各灯色显示顺序）defaultSignalSequence
 enum DefaultSignalSequence
@@ -233,6 +234,7 @@ struct ScData				//信号机控制结构体
 #define FUN_DEC_BUS				(quint32)((FUN_CONF_BASE_0)|(0x08))			//公交检测器
 #define FUN_DEC_VEH				(quint32)((FUN_CONF_BASE_0)|(0x09))			//机动车检测器
 #define FUN_MATRIX				(quint32)((FUN_CONF_BASE_0)|(0x0A))			//间隔矩阵
+#define FUN_DATE_TIME			(quint32)((FUN_CONF_BASE_0)|(0x0b))			//对时间
 
 #define CTRL_RD					(quint8)(0x00)		//单个读取参数;
 #define CTRL_RD_FUN				(quint8)(0x01)		//读取某一类参数;
@@ -611,6 +613,17 @@ struct type_protocol_plan
 	type_unit_matrices matrix[MAX_MTRIXGREEN_NUMBER];
 } ;
 
+ struct type_date_time
+{
+	type_date_time::type_date_time():id_fun(FUN_DATE_TIME),time_t(time(NULL))
+	{
+
+	}
+	const quint32 id_fun;
+	quint32 time_t;			//时间秒数;
+};
+
+
 typedef struct
 {
 
@@ -626,6 +639,7 @@ typedef struct
 	type_bus_detetcor dec_bus;			//公交检测器
 	type_vehicle_detetcor dec_veh;		//机动车检测器
 	type_protocol_matrices matrices;				//绿灯间隔;
+	type_date_time date_time;			//对时;
 }type_fun_conf;
 
 typedef struct

@@ -1,6 +1,8 @@
 
 #include "mainwindow.h"
 #include <QSplitter>
+#include <QMessageBox>
+#include "qchecktimedialog.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),addr(0),port(0)
 {
@@ -118,6 +120,7 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(ui.flashAction, SIGNAL(triggered()), this, SLOT(flashActionCtrl()));
 	connect(ui.offAction, SIGNAL(triggered()), this, SLOT(offActionCtrl()));
 	connect(ui.stepAction, SIGNAL(triggered()), this, SLOT(stepActionCtrl()));
+	connect(ui.checkTimeAction, SIGNAL(triggered()), this, SLOT(checkTime()));
 
 	connect(ui.downLoadAction, SIGNAL(triggered()), this, SLOT(downLoadData()));
 	connect(ui.upLoadAction, SIGNAL(triggered()), this, SLOT(upLoadData()));
@@ -198,6 +201,19 @@ MainWindow::MainWindow(QWidget *parent)
 
 	verLabel = new QLabel(QString("version:"));
 	this->statusBar()->addWidget(verLabel);
+}
+
+void MainWindow::checkTime()
+{
+	if (m_tcpSocket->state()!=QAbstractSocket::ConnectedState)
+	{
+		QMessageBox::information(this, "ERROR", QString::fromLocal8Bit("信号机未连接"));
+		return;
+	}
+	disconnect(m_tcpSocket, SIGNAL(readyRead()),this, SLOT(readyRead()));	//断开信号槽，在校时窗口中连接信号槽
+	QCheckTimeDialog dlg(m_tcpSocket,addr, this);
+	dlg.exec();
+	connect(m_tcpSocket, SIGNAL(readyRead()),this, SLOT(readyRead()));	//重新连接信号槽，在校时窗口中连接信号槽
 }
 
 void MainWindow::autoActionCtrl()
@@ -371,7 +387,7 @@ void MainWindow::readyRead()
 
 void MainWindow::aboutDlg()
 {
-	QMessageBox::about(NULL, QString::fromLocal8Bit("关于"), QString::fromLocal8Bit("版本号：v2.0.6"));
+	QMessageBox::about(NULL, QString::fromLocal8Bit("关于"), QString::fromLocal8Bit("版本号：v2.0.10"));
 }
 
 void MainWindow::saveDefFun()
@@ -635,8 +651,8 @@ void MainWindow::downLoadData()
 	int detBusSize = sizeof(type_bus_detetcor);
 	int detVehSize = sizeof(type_vehicle_detetcor);
 	int mtrixSize = sizeof(type_protocol_matrices);
-	int total = verSize + addSize + planSize + periodSize + tranSize + sqenceSize + detPedSize + 
-		detBusSize + detVehSize + mtrixSize;
+	//int total = verSize + addSize + planSize + periodSize + tranSize + sqenceSize + detPedSize + 
+	//	detBusSize + detVehSize + mtrixSize;
 
 	//发送
 	if(m_tcpSocket->write((char*)data, msg_len)>0)

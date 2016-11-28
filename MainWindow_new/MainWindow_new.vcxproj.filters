@@ -99,6 +99,12 @@
     <Filter Include="Source Files\detector\DetectorVehicle">
       <UniqueIdentifier>{a178ace1-9ece-4731-870e-7dc021381bf7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\CheckTime">
+      <UniqueIdentifier>{e968fb18-447d-4637-901b-d736d3b06b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CheckTime">
+      <UniqueIdentifier>{0ec45c65-98fb-483a-afb1-68a1b1f025ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -428,6 +434,15 @@
     <ClCompile Include="ProjectListWidget.cpp">
       <Filter>Source Files\sequence</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qchecktimedialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qchecktimedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="qchecktimedialog.cpp">
+      <Filter>Source Files\CheckTime</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mainwindow.h">
@@ -604,6 +619,12 @@
     <CustomBuild Include="ProjectListWidget.h">
       <Filter>Header Files\squence</Filter>
     </CustomBuild>
+    <CustomBuild Include="qchecktimedialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qchecktimedialog.h">
+      <Filter>Header Files\CheckTime</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_sequencewidget.h">
@@ -623,6 +644,9 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qchecktimedialog.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

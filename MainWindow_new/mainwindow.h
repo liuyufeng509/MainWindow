@@ -83,6 +83,7 @@ public slots:
 	void flashActionCtrl();
 	void offActionCtrl();
 	void stepActionCtrl();
+	void checkTime();
 
 	void downLoadData();
 	void upLoadData();
